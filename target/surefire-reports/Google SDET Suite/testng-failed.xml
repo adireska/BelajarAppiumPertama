@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Google SDET Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Calculator Test(failed)" verbose="0">
+    <classes>
+      <class name="com.zonakode.appium.InventoryTest">
+        <methods>
+          <include name="TC0008"/>
+        </methods>
+      </class> <!-- com.zonakode.appium.InventoryTest -->
+    </classes>
+  </test> <!-- Calculator Test(failed) -->
+</suite> <!-- Failed suite [Google SDET Suite] -->
