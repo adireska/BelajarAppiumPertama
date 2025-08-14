@@ -1,6 +1,7 @@
+com\zonakode\appium\screens\DetailInventoryScreen.class
 com\zonakode\appium\utils\DragPositionUtil.class
 com\zonakode\appium\utils\DriverUtil.class
 com\zonakode\appium\App.class
-com\zonakode\appium\screens\LoginScreen.class
 com\zonakode\appium\components\HeaderComponent.class
+com\zonakode\appium\screens\LoginScreen.class
 com\zonakode\appium\screens\InventoryScreen.class

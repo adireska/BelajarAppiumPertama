@@ -5,7 +5,8 @@
   <test name="Calculator Test">
     <classes>
       <!-- <class name="com.zonakode.appium.LoginTest"></class> -->
-      <class name="com.zonakode.appium.InventoryTest"></class>
+      <!-- <class name="com.zonakode.appium.InventoryTest"></class> -->
+      <class name="com.zonakode.appium.DetailInventoryTest"></class>
     </classes>
   </test>
 </suite>

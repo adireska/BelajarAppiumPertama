@@ -17,6 +17,7 @@ public class InventoryScreen {
     private HeaderComponent headerComponent;
     private By header = AppiumBy.xpath("//android.widget.TextView[@text=\"PRODUCTS\"]");
     private By allProductItems = AppiumBy.xpath("//android.view.ViewGroup[@content-desc=\"test-Item\"]");
+    private By clickDetailItem = AppiumBy.xpath("(//android.view.ViewGroup[@content-desc=\"test-Item\"])[1]/android.view.ViewGroup");
     private By scrollView = AppiumBy.xpath("//android.widget.ScrollView[@content-desc=\"test-PRODUCTS\"]");
     private By buttonDrag = AppiumBy.xpath("(//android.view.ViewGroup[@content-desc=\"test-Drag Handle\"])[1]");
 
@@ -35,6 +36,10 @@ public class InventoryScreen {
 
     public int getTotalProductDisplayed() {
         return driver.findElements(allProductItems).size();
+    }
+
+    public void clickDetailItem() {
+        driver.findElement(clickDetailItem).click();
     }
 
     public String getTotalCart() {

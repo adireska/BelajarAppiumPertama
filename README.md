@@ -1,81 +1,28 @@
 # BelajarAppiumPertama
 
-This project demonstrates mobile automation using Appium with Java and TestNG. It includes test cases for login functionality and inventory management on a mobile application.
-
-## Features
-
-*   Automated login tests.
-*   Automated inventory screen interactions.
-*   Utilizes Appium for mobile device automation.
-*   Organized with Maven for dependency management.
-*   Test execution managed by TestNG.
+This project is a collection of Appium tests written in Java using Maven.
 
 ## Prerequisites
 
-*   Java Development Kit (JDK)
-*   Apache Maven
-*   Appium Server
-*   Android SDK and an Android Emulator or physical device
+*   Java Development Kit (JDK) installed.
+*   Apache Maven installed.
 
-## Setup
+## Build
 
-1.  Clone the repository:
-    ```bash
-    git clone https://github.com/adireska/BelajarAppiumPertama.git
-    cd BelajarAppiumPertama
-    ```
-2.  Ensure Appium Server is running.
-3.  Ensure an Android Emulator or device is connected and recognized by ADB.
+To build the project, navigate to the project's root directory in your terminal and run the following Maven command:
 
-## Running Tests
-
-1.  Build the project using Maven:
-    ```bash
-    mvn clean install
-    ```
-2.  Run the tests using TestNG. You can execute tests directly from your IDE or via Maven:
-    ```bash
-    mvn test
-    ```
-    Alternatively, you can run tests specified in `src/test/resources/testng.xml`.
-
-## Project Structure
-
-```
-.
-├── login_test_cases.csv
-├── pom.xml
-├── src
-│   ├── main
-│   │   └── java
-│   │       └── com
-│   │           └── zonakode
-│   │               └── appium
-│   │                   ├── components
-│   │                   │   └── HeaderComponent.java
-│   │                   ├── screens
-│   │                   │   ├── InventoryScreen.java
-│   │                   │   └── LoginScreen.java
-│   │                   └── utils
-│   │                       ├── DragPositionUtil.java
-│   │                       └── DriverUtil.java
-│   └── test
-│       ├── java
-│       │   └── com
-│       │       └── zonakode
-│       │           └── appium
-│       │               ├── InventoryTest.java
-│       │               └── LoginTest.java
-│       └── resources
-│           └── testng.xml
-└── target
-    └── ... (compiled classes and test reports)
+```bash
+mvn clean install
 ```
 
-## Contributing
+This command will compile the source code, run tests, and package the project.
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+## Run Tests
 
-## License
+To run the tests, use the following Maven command:
 
-This project is licensed under the MIT License.
+```bash
+mvn test
+```
+
+This command will execute all the tests defined in the project.
