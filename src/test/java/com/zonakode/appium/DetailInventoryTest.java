@@ -120,11 +120,6 @@ public class DetailInventoryTest {
 
             System.out.println("Using center point: (" + centerX + ", " + centerY + ")");
 
-            // The original code had other zoom approaches like performStandardZoom, etc.
-            // These methods are not defined in the provided code.
-            // To avoid compilation errors, they are commented out.
-            // If they are needed, they should be defined.
-
             // Contoh pemanggilan performPinchZoom
             performPinchZoom(driverUtil, productImage, true); // zoom in
             performPinchZoom(driverUtil, productImage, false); // zoom out
